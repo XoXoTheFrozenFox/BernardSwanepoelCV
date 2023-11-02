@@ -292,3 +292,14 @@ p {
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+a {
+    color: #FFF; /* White color for hyperlinks */
+    text-decoration: underline; /* Optional: Remove underline */
+    font-size: 12px;
+}
+
+/* Style for the hyperlink when hovered */
+a:hover {
+    color: #FFF; /* Change color on hover, replace '#CCC' with your desired hover color */
+}
