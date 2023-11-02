@@ -1,2 +1,3 @@
 # BernardSwanepoelCV
-The CV of Bernard Swanepoel
+#Link of website
+## https://xoxothefrozenfox.github.io/BernardSwanepoelCV/Index.html 
