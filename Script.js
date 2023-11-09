@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const imgBx = document.querySelector('.imgBx');
     const modal = document.getElementById('customModal');
 
-    // Mouse events for desktop
     imgBx.addEventListener('mouseover', applyGrayscale);
     imgBx.addEventListener('mouseout', handleMouseOut);
 
-    // Touch events for mobile
+
     imgBx.addEventListener('touchstart', (event) => {
         event.preventDefault();
         applyGrayscale();
+        showCustomModal();
     });
 
     imgBx.addEventListener('touchend', handleTouchEnd);
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Click event for both desktop and mobile
     imgBx.addEventListener('click', () => {
         showCustomModal();
     });
@@ -50,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
         removeGrayscale(); // Remove grayscale when modal is closed
     }
 
-    // Optionally, you can expose these functions to be used globally if needed
+
     window.showCustomModal = showCustomModal;
     window.closeModal = closeModal;
 });
