@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
     imgBx.addEventListener('touchend', (event) => {
         event.preventDefault();
         handleTouchEnd();
-        closeModal();
     });
 
     function applyGrayscale() {
