@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     imgBx.addEventListener('touchstart', (event) => {
         event.preventDefault();
         applyGrayscale();
-        showCustomModal();
-        closeModal();
     });
     
     imgBx.addEventListener('touchend', (event) => {
