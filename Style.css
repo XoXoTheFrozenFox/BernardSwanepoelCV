@@ -354,8 +354,8 @@ a:hover {
 
 .close {
     position: absolute;
-    top: 2px;
-    right: 3px;
+    top: 3px;
+    right: 5px;
     font-size: 20px;
     cursor: pointer;
 }
