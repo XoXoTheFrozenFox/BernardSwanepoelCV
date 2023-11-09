@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
     imgBx.addEventListener('touchstart', (event) => {
         event.preventDefault();
         applyGrayscale();
+        showCustomModal();
     });
     
     imgBx.addEventListener('touchend', (event) => {
         event.preventDefault();
         handleTouchEnd();
+        closeModal();
     });
 
     function applyGrayscale() {
