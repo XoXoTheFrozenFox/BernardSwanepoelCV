@@ -10,8 +10,11 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
         applyGrayscale();
     });
-
-    imgBx.addEventListener('touchend', handleTouchEnd);
+    
+    imgBx.addEventListener('touchend', (event) => {
+        event.preventDefault();
+        handleTouchEnd();
+    });
 
     function applyGrayscale() {
         imgBx.style.filter = 'grayscale(100%)';
