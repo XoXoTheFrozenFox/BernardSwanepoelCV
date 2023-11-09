@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
         closeModal();
     });
     
-    //imgBx.addEventListener('touchend', (event) => {
+    imgBx.addEventListener('touchend', (event) => {
         //event.preventDefault();
         //handleTouchEnd();
-    //});
+    });
 
     function applyGrayscale() {
         imgBx.style.filter = 'grayscale(100%)';
