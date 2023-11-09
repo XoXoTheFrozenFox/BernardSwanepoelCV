@@ -304,31 +304,6 @@ a:hover {
     color: #FFF; /* Change color on hover, replace '#CCC' with your desired hover color */
 }
 
-.customMessageBox {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #e74c3c;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    font-size: 18px;
-    display: none;
-    z-index: 1000; /* Ensure the message box appears above other elements */
-    display: block;
-}
-
-.customMessageBox p {
-    margin: 0;
-}
-
-.angryFace {
-    font-size: 36px;
-    margin-top: 10px;
-}
 .modal {
     display: none;
     position: fixed;
@@ -340,12 +315,19 @@ a:hover {
     z-index: 1000;
 }
 
+.modal p{
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fefefe;
+    background-color: #fff;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
