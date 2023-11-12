@@ -1,14 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
+    console.log("Created by Bernard Swanepoel :D")
     const imgBx = document.querySelector('.imgBx');
     const modal = document.getElementById('customModal');
 
-    imgBx.addEventListener('mouseover', applyGrayscale);
+    imgBx.addEventListener('mouseover', applyPinkScale);
     imgBx.addEventListener('mouseout', handleMouseOut);
 
 
     imgBx.addEventListener('touchstart', (event) => {
         event.preventDefault();
-        applyGrayscale();
+        applyPinkScale();
         showCustomModal();
     });
     
@@ -17,23 +18,23 @@ document.addEventListener('DOMContentLoaded', function () {
         handleTouchEnd();
     });
 
-    function applyGrayscale() {
-        imgBx.style.filter = 'grayscale(100%)';
+    function applyPinkScale() {
+        imgBx.style.filter = 'grayscale(100%) sepia(100%) hue-rotate(255deg) brightness(1.2) contrast(1)';
     }
 
-    function removeGrayscale() {
-        imgBx.style.filter = 'grayscale(0%)';
+    function removePinkScale() {
+        imgBx.style.filter = ''; // Resetting the filter to remove all effects
     }
 
     function handleMouseOut() {
         if (!modal.style.display || modal.style.display === 'none') {
-            removeGrayscale();
+            removePinkScale();
         }
     }
 
     function handleTouchEnd() {
         if (!modal.style.display || modal.style.display === 'none') {
-            removeGrayscale();
+            removePinkScale();
         }
     }
 
@@ -44,12 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Modal-related functions
     function showCustomModal() {
         modal.style.display = 'block';
-        applyGrayscale(); // Apply grayscale when modal is displayed
+        applyPinkScale(); // Apply pinkscale when modal is displayed
     }
 
     function closeModal() {
         modal.style.display = 'none';
-        removeGrayscale(); // Remove grayscale when modal is closed
+        removePinkScale(); // Remove pinkscale when modal is closed
     }
 
 
