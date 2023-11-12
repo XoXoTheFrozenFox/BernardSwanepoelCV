@@ -22,7 +22,7 @@ body {
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px #213F99;
+    box-shadow: 0 15px 55px #213F99;
 }
 
 .container .Left_Side {
