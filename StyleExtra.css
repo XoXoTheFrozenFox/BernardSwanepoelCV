@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 15px 55px #213F99;
+}
+
+.container .Left_Side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo h5 {
+    color: white;
+}
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 15px;
+    color: #E1B0AC;
+}
+
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.profileText .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profileText .imgBx {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+    color: lightcoral;
+    font-weight: 500;
+}
+
+.contactInfo.education li h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.education li h4 {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.contactInfo.badgescerts li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.badgescerts h5 {
+    color: lightcoral;
+    font-weight: 500;
+}
+
+.contactInfo.badgescerts li h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.badgescerts li h4 {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: black;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #E1B0AC;
+}
+
+.container .Right_Side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: column; /* Change to column to stack skill bars */
+    margin: 20px 0; /* Adjust margin for even spacing */
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: lightcoral;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: grey;
+}
+
+.skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: lightcoral;
+}
+.interest ul 
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li 
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa
+{
+    color: lightcoral;
+    font-size: 18px;
+    width: 20px;
+}
+
+@media(max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px)
+{
+    .about .box
+    {
+        flex-direction: column;
+    }
+    .about .box .year_company
+    {
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .interest ul
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+a {
+    color: #FFF; /* White color for hyperlinks */
+    text-decoration: underline; /* Optional: Remove underline */
+    font-size: 12px;
+}
+
+/* Style for the hyperlink when hovered */
+a:hover {
+    color: #FFF; /* Change color on hover, replace '#CCC' with your desired hover color */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal p{
+    font-size: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}

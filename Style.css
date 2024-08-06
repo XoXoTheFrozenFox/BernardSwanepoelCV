@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: lightblue;
+    background-color: #2f2245;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
 
 .container .Left_Side {
     position: relative;
-    background: #003147;
+    background: #4a2841;
     padding: 40px;
 }
 
@@ -69,7 +69,7 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 15px;
-    color: #E1B0AC;
+    color: #3c79ac;
 }
 
 .contactInfo ul li span {
@@ -112,7 +112,7 @@ body {
 }
 
 .contactInfo.education h5 {
-    color: lightcoral;
+    color: #3c79ac;
     font-weight: 500;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .contactInfo.badgescerts h5 {
-    color: lightcoral;
+    color: #3c79ac;
     font-weight: 500;
 }
 
@@ -208,7 +208,7 @@ p {
 
 .about .box .text h4 {
     text-transform: uppercase;
-    color: lightcoral;
+    color: #3c79ac;
     font-size: 16px;
 }
 
@@ -239,7 +239,7 @@ p {
     top: 0;
     left: 0;
     height: 100%;
-    background: lightcoral;
+    background: #E1B0AC;
 }
 .interest ul 
 {
@@ -255,7 +255,7 @@ p {
 }
 .interest ul li .fa
 {
-    color: lightcoral;
+    color: #3c79ac;
     font-size: 18px;
     width: 20px;
 }
