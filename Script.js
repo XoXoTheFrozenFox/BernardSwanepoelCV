@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function applyPinkScale() {
         imgBx.style.filter = 'grayscale(100%) sepia(100%) hue-rotate(255deg) brightness(1.2) contrast(1)';
+        //imgBx.style.filter = 'grayscale(100%) sepia(100%) hue-rotate(180deg) brightness(1) contrast(1.2)';
     }
 
     function removePinkScale() {
